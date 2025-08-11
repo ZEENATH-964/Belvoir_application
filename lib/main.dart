@@ -1,23 +1,35 @@
-import 'package:belvoir_app/User/Profile/profile.dart';
-import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+import 'package:belvoir_app/User/Profile/profile.dart';
+
+import 'package:belvoir_app/User/UserView/userbottom/user_bottom.dart';
+import 'package:belvoir_app/User/User_ViewModel/userbottomprovider/user_bottom_provider.dart';
+
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+void main(){
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+
+   
+
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context)=>UserBottomProvider())
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: UserBottom(),
       ),
-      home: ProfilePage(),
     );
+
+    
   }
 }
+

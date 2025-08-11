@@ -1,5 +1,9 @@
+
+import 'package:belvoir_app/User/Profile/profile.dart';
+
 import 'package:belvoir_app/User/UserView/userbottom/user_bottom.dart';
 import 'package:belvoir_app/User/User_ViewModel/userbottomprovider/user_bottom_provider.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -12,6 +16,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+   
+
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context)=>UserBottomProvider())
@@ -25,3 +32,4 @@ class MyApp extends StatelessWidget {
     
   }
 }
+

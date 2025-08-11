@@ -1,10 +1,10 @@
-import 'dart:ui';
+
 
 import 'package:belvoir_app/User/UserView/userhome/user_home.dart';
 import 'package:belvoir_app/User/UserView/userrentel/user_rentel.dart';
 import 'package:belvoir_app/User/UserView/usertiloring/user_tiloring.dart';
 import 'package:belvoir_app/User/User_ViewModel/userbottomprovider/user_bottom_provider.dart';
-import 'package:belvoir_app/constants/text_constants.dart';
+
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

@@ -513,14 +513,14 @@ class ProfilePage extends StatelessWidget {
         style: OutlinedButton.styleFrom(
           padding: const EdgeInsets.symmetric(vertical: 14),
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
-          side: const BorderSide(color: Colors.red),
+          side: const BorderSide(color: Colors.yellow),
         ),
         child: const Text(
-          'Logout',
+          'Logout ',
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w500,
-            color: Colors.red,
+            color: Colors.yellow,
           ),
         ),
       ),

@@ -1,5 +1,5 @@
 class TextConstants {
-  static const home="HOme";
+  static const home="Home";
   static const rental="Rental";
   static const tiloring="Tailoring";
   static const clothing1="Clothing Rentals for Every Occasion";

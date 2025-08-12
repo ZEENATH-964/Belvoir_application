@@ -1,5 +1,5 @@
 
-import 'package:belvoir_app/User/Profile/profile.dart';
+import 'package:belvoir_app/User/UserView/userprofile/userprofile.dart';
 
 import 'package:belvoir_app/User/UserView/userbottom/user_bottom.dart';
 import 'package:belvoir_app/User/User_ViewModel/userbottomprovider/user_bottom_provider.dart';

@@ -1,6 +1,6 @@
 
-
 import 'package:belvoir_app/User/UserView/userhome/user_home.dart';
+import 'package:belvoir_app/User/UserView/userprofile/userprofile.dart';
 import 'package:belvoir_app/User/UserView/userrentel/user_rentel.dart';
 import 'package:belvoir_app/User/UserView/usertiloring/user_tiloring.dart';
 import 'package:belvoir_app/User/User_ViewModel/userbottomprovider/user_bottom_provider.dart';
@@ -15,7 +15,8 @@ class UserBottom extends StatelessWidget {
 final pages=[
   UserHome(),
   UserRentel(),
-  UserTiloring()
+  UserTiloring(),
+  Userprofile()
 ];
   @override
   Widget build(BuildContext context) {
@@ -38,6 +39,7 @@ final pages=[
      Icon(Icons.home, size: 28, color: Colors.white),
           Icon(Icons.checkroom, size: 28, color: Colors.white),
           Icon(Icons.content_cut, size: 28, color: Colors.white),
+           Icon(Icons.person, size: 28, color: Colors.white),
    ]),
     );
   }

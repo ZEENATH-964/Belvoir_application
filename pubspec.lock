@@ -176,7 +176,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
-
   path_provider_linux:
     dependency: transitive
     description:
@@ -217,7 +216,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.8"
-
   provider:
     dependency: "direct main"
     description:
@@ -226,7 +224,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.5"
-
   shared_preferences:
     dependency: "direct main"
     description:
@@ -283,7 +280,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.4.1"
-
   sky_engine:
     dependency: transitive
     description: flutter

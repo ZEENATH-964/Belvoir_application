@@ -1,5 +1,4 @@
-
-import 'package:belvoir_app/User/Profile/profile.dart';
+import 'package:belvoir_app/User/UserView/Profile/userprofile.dart';
 
 import 'package:belvoir_app/User/UserView/userbottom/user_bottom.dart';
 import 'package:belvoir_app/User/User_ViewModel/userbottomprovider/user_bottom_provider.dart';
@@ -7,7 +6,7 @@ import 'package:belvoir_app/User/User_ViewModel/userbottomprovider/user_bottom_p
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
@@ -16,20 +15,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-   
-
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context)=>UserBottomProvider())
+        ChangeNotifierProvider(create: (context) => UserBottomProvider()),
       ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: UserBottom(),
-      ),
+      child: MaterialApp(debugShowCheckedModeBanner: false, home: UserBottom()),
     );
-
-    
   }
 }
-
